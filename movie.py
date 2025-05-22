@@ -67,4 +67,3 @@ with st.form("titanic_form"):
             st.markdown(f"**Sentiment:** {sentiment}")
         else:
             st.warning("Please enter a movie review to analyze.")
-

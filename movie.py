@@ -1,4 +1,4 @@
-import tensorflow as tf import streamlit as st
+
 import streamlit as st
 import tensorflow as tf
 import pickle
@@ -9,7 +9,7 @@ st.markdown(
     """
    <style>
     .stApp {
-        background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+       background-image: url("https://img.freepik.com/free-vector/emotions-indicator-design_24877-82286.jpg?ga=GA1.1.217072867.1747930119&semt=ais_hybrid&w=740");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

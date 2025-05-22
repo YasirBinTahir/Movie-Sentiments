@@ -1,5 +1,5 @@
 import streamlit as st
-
+import tensorflow as tf
 import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
@@ -48,7 +48,7 @@ tokenizer = load_tokenizer()
 MAX_SEQUENCE_LENGTH = 100
 
 # Begin form
-with st.form("titanic_form"):
+with st.form("review_form"):
     st.title("🎬 Movie Review Sentiment Analyzer")
     st.write("Enter a movie review below to predict its sentiment.")
 
@@ -64,3 +64,4 @@ with st.form("titanic_form"):
             st.markdown(f"**Sentiment:** {sentiment}")
         else:
             st.warning("Please enter a movie review to analyze.")
+

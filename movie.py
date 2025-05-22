@@ -6,18 +6,18 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Inject CSS for background image and styled container
 st.markdown(
     """
-   <style>
+    <style>
     .stApp {
-       background-image: url("https://img.freepik.com/free-vector/emotions-indicator-design_24877-82286.jpg?ga=GA1.1.217072867.1747930119&semt=ais_hybrid&w=740");
+        background-image: url("https://img.freepik.com/free-vector/emotions-indicator-design_24877-82286.jpg?ga=GA1.1.217072867.1747930119&semt=ais_hybrid&w=740");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
     h1 {
-      color: #2E86C1 !important;
+        color: #2E86C1 !important;
     }
     p {
-      color: orange !important;
+        color: orange !important;
     }
     div[data-testid="stForm"] {
         background-color: black;
@@ -45,7 +45,6 @@ def load_tokenizer():
 
 model = load_model()
 tokenizer = load_tokenizer()
-
 MAX_SEQUENCE_LENGTH = 100
 
 # Begin form
@@ -54,8 +53,6 @@ with st.form("titanic_form"):
     st.write("Enter a movie review below to predict its sentiment.")
 
     review = st.text_area("Movie Review", height=150)
-
-    # ✅ Submit button required for forms
     submit = st.form_submit_button("Predict Sentiment")
 
     if submit:

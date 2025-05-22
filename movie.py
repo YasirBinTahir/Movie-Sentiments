@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow as tf
+import tensorflow as tenf
 import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
